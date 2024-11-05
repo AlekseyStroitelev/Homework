@@ -1,0 +1,11 @@
+---
+clickhouse:
+  hosts:
+    clickhouse-01:
+      ansible_host: 130.193.46.82
+      ansible_user: makaron
+vector:
+  hosts:
+    vector-01:
+      ansible_host: 130.193.46.239
+      ansible_user: makaron
