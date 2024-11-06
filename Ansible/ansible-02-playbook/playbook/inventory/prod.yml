@@ -2,10 +2,10 @@
 clickhouse:
   hosts:
     clickhouse-01:
-      ansible_host: 130.193.45.173
+      ansible_host: 130.193.59.100
       ansible_user: makaron
 vector:
   hosts:
     vector-01:
-      ansible_host: 84.252.134.81
+      ansible_host: 84.201.145.139
       ansible_user: makaron
