@@ -14,7 +14,7 @@ Installation will by made on two nodes:
 
 ## After installation
 
-Wi have tpwo configured nodes:
+Wi have two configured nodes:
 
 - vector-01 with default `vector.yml`
 - clichouse-01 with created `database logs`
