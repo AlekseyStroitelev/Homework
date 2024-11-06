@@ -19,6 +19,11 @@
         name:
           - vector-{{ vector_version }}-1.rpm
       notify: Start vector service
+    - name: Vector template configp
+      ansible.builtin.template:
+        src: vector.yml.j2
+        dest: vector.yml
+        mode: "0644"
     - name: Flush handlers
       ansible.builtin.meta: flush_handlers
 - name: Install Clickhouse
