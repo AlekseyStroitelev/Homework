@@ -12,9 +12,9 @@ This ansible playbook supports the following:
 
 Installation will by made on three nodes:
 
-- vector-01 with internal IPv4 10.131.0.32
-- clichouse-01 with internal IPv4 10.131.0.27
-- lighthouse-01 with internal IPv4 
+- vector-01
+- clichouse-01
+- lighthouse-01
 
 ## After installation
 
