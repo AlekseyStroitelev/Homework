@@ -1,15 +1,12 @@
 ---
-- name: Install lighthouse
-  hosts: lighthouse
-  block:
-    - name: Lighthouse | install dependencies
-      become: true
-      ansible.builtin.apt:
-        name: git
-        state: present
-    - name: Lighthouse | copy from git
-      ansible.builtin.git:
-        repo: "https://github.com/VKCOM/lighthouse.git"
-        version: master
-        dest: /home/makaron/lighthouse
-      notify: Reload-nginx
+- name: Lighthouse | install dependencies
+  become: true
+  ansible.builtin.apt:
+    name: git
+    state: present
+- name: Lighthouse | copy from git
+  ansible.builtin.git:
+    repo: "https://github.com/VKCOM/lighthouse.git"
+    version: master
+    dest: /home/makaron/lighthouse
+  notify: Reload-nginx
