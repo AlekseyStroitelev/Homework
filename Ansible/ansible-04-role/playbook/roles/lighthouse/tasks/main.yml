@@ -1,0 +1,5 @@
+---
+- name: Install nginx and lighthouse
+  ansible.builtin.include_tasks:
+   - nginx.yml
+   - lighthouse.yml

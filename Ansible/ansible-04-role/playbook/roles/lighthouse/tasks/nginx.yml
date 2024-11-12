@@ -1,0 +1,17 @@
+---
+- name: Install nginx
+  hosts: lighthouse
+  block:
+    - name: Nginx | Install nginx
+      become: true
+      ansible.builtin.apt:
+        name: nginx
+        state: present
+      notify: Start-nginx
+    - name: Nginx | Create config
+      become: true
+      ansible.builtin.template:
+        src: templates/nginx.conf.j2
+        dest: /etc/nginx/nginx.conf
+        mode: "0644"
+      notify: Start-nginx
