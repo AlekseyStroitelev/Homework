@@ -2,7 +2,7 @@
 - name: Install lighthouse
   hosts: lighthouse
   roles:
-    - lighthouse    
+    - lighthouse
 - name: Install Vector
   hosts: vector
   roles:
