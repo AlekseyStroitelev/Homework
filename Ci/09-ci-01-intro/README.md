@@ -1,6 +1,6 @@
 <img src="https://wac-cdn.atlassian.com/dam/jcr:826c97dc-1f5c-4955-bfcc-ea17d6b0c095/jira%20software-icon-gradient-blue.svg?cdnVersion=492" height="64px"/>
 
-# Домашнее задание к занятию 7 «Жизненный цикл ПО»
+# «Жизненный цикл ПО»
 
 ## Подготовка к выполнению
 
