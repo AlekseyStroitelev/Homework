@@ -38,10 +38,10 @@
 1. Перейдите в Scrum, запланируйте новый спринт, состоящий из задач эпика и одного бага, стартуйте спринт, проведите задачи до состояния Closed. Закройте спринт.
 2. Если всё отработалось в рамках ожидания — выгрузите схемы workflow для импорта в XML. Файлы с workflow и скриншоты workflow приложите к решению задания. `XML-файлы и скриншоты workflow прикреплены к ДЗ`
 
----
+### Ответ:
 
-### Как оформить решение задания
+[BugXML](https://github.com/AlekseyStroitelev/Homework/blob/main/Ci/09-ci-01-intro/Bug%20workflow.xml)
+[OtherXML](https://github.com/AlekseyStroitelev/Homework/blob/main/Ci/09-ci-01-intro/Task%20workflow.xml)
 
-Выполненное домашнее задание пришлите в виде ссылки на .md-файл в вашем репозитории.
-
----
+![Bug](https://github.com/AlekseyStroitelev/Homework/blob/main/Ci/09-ci-01-intro/screenshots/Bug_Workflow.JPG)
+![Other](https://github.com/AlekseyStroitelev/Homework/blob/main/Ci/09-ci-01-intro/screenshots/Other_Workflow.JPG)
