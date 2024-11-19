@@ -39,7 +39,7 @@ Hey, Netology
 
 ### Ответ:
 
-[docker2](https://github.com/AlekseyStroitelev/Homework/blob/main/Virtualization/05-virt-03-docker-intro/screenshots/docker2.png)
+![docker2](https://github.com/AlekseyStroitelev/Homework/blob/main/Virtualization/05-virt-03-docker-intro/screenshots/docker2.png)
 
 ## Задача 3
 3. Выполните `docker ps -a` и объясните своими словами почему контейнер остановился. `В данный момент выполнялась команда docker attach, сочетанием клавишь Ctrl-C мы передали SIGINT что и повлекло за собой остановку контейнера.`
