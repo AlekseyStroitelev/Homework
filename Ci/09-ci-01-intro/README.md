@@ -40,7 +40,7 @@
 
 ### Ответ:
 
-[BugXML](https://github.com/AlekseyStroitelev/Homework/blob/main/Ci/09-ci-01-intro/Bug%20workflow.xml)
+[BugXML](https://github.com/AlekseyStroitelev/Homework/blob/main/Ci/09-ci-01-intro/Bug%20workflow.xml) 
 [OtherXML](https://github.com/AlekseyStroitelev/Homework/blob/main/Ci/09-ci-01-intro/Task%20workflow.xml)
 
 ![Bug](https://github.com/AlekseyStroitelev/Homework/blob/main/Ci/09-ci-01-intro/screenshots/Bug_Workflow.JPG)
