@@ -57,20 +57,20 @@ Terraform и Docker установлены:
 ![1_4](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/01/screenshots/Terraform1_4.png)
 
 `Первая ошибка говорит нам о том, что в блоке типа resource не хватает имени. Данный блок должен содержать две метки, первая указывает на тип ресурса провайдера docker, вторая является произвольным именем данного ресурса.` - исправил.
-`Вторая ошибка говорит о не корректном имени ресурса. По умолчанию, имя может начинаться только с буквы или подчеркивания. В нашем случае 1nginx - не верно. Так же в теле данного блока была ошибка в значении аргумента: name  = "example_${random_password.random_string_FAKE.resulT}" - не верно, должно быть так: name  = "example_${random_password.random_string.result}"` - но присваивать имени контейнера ранее сгенерированный пароль это не очень хорошая затея, исправил.
+`Вторая ошибка говорит о не корректном имени ресурса. По умолчанию, имя может начинаться только с буквы или подчеркивания. В нашем случае 1nginx - не верно. Так же в теле данного блока была ошибка в значении аргумента: name  = "example_${random_password.random_string_FAKE.resulT}" - не верно, должно быть так: name  = "example_${random_password.random_string.result}"` - конечно в данном случае значение name не является настоящим паролем и скорее служит примером присваения значения из переменной, но для эстетики исправил.
 
 5. Выполните код. В качестве ответа приложите: исправленный фрагмент кода и вывод команды ```docker ps```.
 
 ### Ответ:
 
 ```
-resource "docker_image" "nginx" {
+resource "docker_image" "nginx_image" {
   name         = "nginx:latest"
   keep_locally = true
 }
 
 resource "docker_container" "nginx_container" {
-  image = docker_image.nginx.image_id
+  image = docker_image.nginx_image.name
   name  = "nginx"
 
   ports {
@@ -84,9 +84,38 @@ resource "docker_container" "nginx_container" {
 
 6. Замените имя docker-контейнера в блоке кода на ```hello_world```. Не перепутайте имя контейнера и имя образа. Мы всё ещё продолжаем использовать name = "nginx:latest". Выполните команду ```terraform apply -auto-approve```.
 Объясните своими словами, в чём может быть опасность применения ключа  ```-auto-approve```. Догадайтесь или нагуглите зачем может пригодиться данный ключ? В качестве ответа дополнительно приложите вывод команды ```docker ps```.
-8. Уничтожьте созданные ресурсы с помощью **terraform**. Убедитесь, что все ресурсы удалены. Приложите содержимое файла **terraform.tfstate**. 
+
+### Ответ:
+
+`Запуская команду terraform apply, перед тем как она будет выполнена, у нас есть возиожность увидеть в консоли все изменения которые будут произведены и в случае если, по какой-то причине, была допущена ошибка при написании *.tf файла, мы можем не отвечать yes и не допустить нежелательных изменений. Если же terraform apply запускается автоматически, а не в ручную, то использование данного ключа - необходимо, в противном случае выполнение команды будет прервано.`
+
+![1_6](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/01/screenshots/Terraform1_6.png)
+
+8. Уничтожьте созданные ресурсы с помощью **terraform**. Убедитесь, что все ресурсы удалены. Приложите содержимое файла **terraform.tfstate**.
+
+### Ответ:
+
+```
+{
+  "version": 4,
+  "terraform_version": "1.8.5",
+  "serial": 41,
+  "lineage": "82c4ab30-b76a-ba39-8110-21caeb8d47ec",
+  "outputs": {},
+  "resources": [],
+  "check_results": null
+}
+
+```
+
 9. Объясните, почему при этом не был удалён docker-образ **nginx:latest**. Ответ **ОБЯЗАТЕЛЬНО НАЙДИТЕ В ПРЕДОСТАВЛЕННОМ КОДЕ**, а затем **ОБЯЗАТЕЛЬНО ПОДКРЕПИТЕ** строчкой из документации [**terraform провайдера docker**](https://docs.comcloud.xyz/providers/kreuzwerker/docker/latest/docs).  (ищите в классификаторе resource docker_image )
 
+### Ответ:
+
+Блок resource `docker_image` содержит аргумент `keep_locally`, если его значение **true**, то после выполнения команды `terraform destroy` образ останется в локальном хранилище, если **false**, то образ будет удален.
+В документации к провайдеру `docker` написано так:
+
+```keep_locally``` (Boolean) If true, then the Docker image won't be deleted on destroy operation. If this is false, it will delete the image from the docker local storage on destroy operation.
 
 ------
 
