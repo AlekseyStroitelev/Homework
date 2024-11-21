@@ -16,7 +16,7 @@
 ### Ответ:
 
 Terraform и Docker установлены:
-![check](***01/screenshots/Terraform_check.png***)
+![check](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/01/screenshots/Terraform_check.png)
 
 ------
 
