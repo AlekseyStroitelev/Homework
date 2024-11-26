@@ -15,7 +15,7 @@
 ### Ответ:
 Создал сервисный аккаунт и ключ для него:
 
-![02_1_2]()
+![02_1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/02/screenshots/Terraform02_1_2.png)
 
 4. Сгенерируйте новый или используйте свой текущий ssh-ключ. Запишите его открытую(public) часть в переменную **vms_ssh_public_root_key**.
 5. Инициализируйте проект, выполните код. Исправьте намеренно допущенные синтаксические ошибки. Ищите внимательно, посимвольно. Ответьте, в чём заключается их суть.
@@ -23,7 +23,7 @@
 ### Ответ:
 Не корректное значение аргумента `platform_id` в блоке `resource "yandex_compute_instance" "platform"`, не существует платформы с таким id как `standart-v4`. Перечень доступных платформ и их конфигурации есть в [документации](https://yandex.cloud/ru/docs/compute/concepts/performance-levels). Поправил значения для `platform_id`, и значения для аргументов блока `resources`. `terraform apply` отработала без ошибок.
 
-![02_4_3]()
+![02_1_4.2](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/02/screenshots/Terraform02_1_4.2.png)
 
 6. Подключитесь к консоли ВМ через ssh и выполните команду ``` curl ifconfig.me```.
 Примечание: К OS ubuntu "out of a box, те из коробки" необходимо подключаться под пользователем ubuntu: ```"ssh ubuntu@vm_ip_address"```. Предварительно убедитесь, что ваш ключ добавлен в ssh-агент: ```eval $(ssh-agent) && ssh-add``` Вы познакомитесь с тем как при создании ВМ создать своего пользователя в блоке metadata в следующей лекции.;
