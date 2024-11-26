@@ -33,13 +33,11 @@
 Примечание: К OS ubuntu "out of a box, те из коробки" необходимо подключаться под пользователем ubuntu: ```"ssh ubuntu@vm_ip_address"```. Предварительно убедитесь, что ваш ключ добавлен в ssh-агент: ```eval $(ssh-agent) && ssh-add``` Вы познакомитесь с тем как при создании ВМ создать своего пользователя в блоке metadata в следующей лекции.;
 
 ### Ответ:
- 
-![02_1_6 ](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/02/screenshots/Terraform02_1_6.png)
+ ![02_1_6 ](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/02/screenshots/Terraform02_1_6.png)
 
 8. Ответьте, как в процессе обучения могут пригодиться параметры ```preemptible = true``` и ```core_fraction=5``` в параметрах ВМ.
 
 ### Ответ:
-
 Данные параметры могут пригодиться для экономии облачных ресурсов, `preemtible = true` позволяет создать прерываемую ВМ, которая будет выключена через 24 часа после старта, данная опция снижает стоимость виртуальной машины. Параметр `core_fraction=5` устанавливает базовую производительность для ядра в процентах, так же помогает экономить ресурсы.
 
 
@@ -75,6 +73,11 @@
 2. Примените изменения.
 
 В качестве решения приложите вывод значений ip-адресов команды ```terraform output```.
+
+### Ответ:
+Результат работы комманды `terraform output`:
+
+![02_4](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/02/screenshots/Terraform02_4.png)
 
 
 ### Задание 5
