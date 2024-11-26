@@ -1,5 +1,39 @@
 ###cloud vars
+variable "vm_web_yandex_compute_image_family" {
+  type = string
+  default = "ubuntu-2004-lts"
+  description = "The name of the image family to which this image belongs"
+}
 
+variable "vm_web_yandex_compute_instance_name" {
+  type = string
+  default = "netology-develop-platform-web"
+  description = "Resource name"  
+}
+
+variable "vm_web_yandex_compute_instance_platform_id" {
+  type = string
+  default = "standard-v1"
+  description = "The type of virtual machine to create. The default is standard-v1"  
+}
+
+variable "vm_web_yandex_compute_instance_resources_core" {
+  type = number
+  default = 2
+  description = "CPU cores for the instance"
+}
+
+variable "vm_web_yandex_compute_instance_resources_memory" {
+  type = number
+  default = 2
+  description = "Memory size in GB"
+}
+
+variable "vm_web_yandex_compute_instance_resources_core_fraction" {
+  type = number
+  default = 5
+  description = "If provided, specifies baseline performance for a core as a percent"
+}
 
 variable "cloud_id" {
   type        = string
