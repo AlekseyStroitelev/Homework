@@ -23,11 +23,24 @@
 ### Ответ:
 Не корректное значение аргумента `platform_id` в блоке `resource "yandex_compute_instance" "platform"`, не существует платформы с таким id как `standart-v4`. Перечень доступных платформ и их конфигурации есть в [документации](https://yandex.cloud/ru/docs/compute/concepts/performance-levels). Поправил значения для `platform_id`, и значения для аргументов блока `resources`. `terraform apply` отработала без ошибок.
 
-![02_1_4.2](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/02/screenshots/Terraform02_1_4.2.png)
+![02_1_5.1](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/02/screenshots/Terraform02_1_5.1.png)
+
+Виртуальная машина в Yandex Cloud:
+
+![02_1_5.2](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/02/screenshots/Terraform02_1_5.2.png)
 
 6. Подключитесь к консоли ВМ через ssh и выполните команду ``` curl ifconfig.me```.
 Примечание: К OS ubuntu "out of a box, те из коробки" необходимо подключаться под пользователем ubuntu: ```"ssh ubuntu@vm_ip_address"```. Предварительно убедитесь, что ваш ключ добавлен в ssh-агент: ```eval $(ssh-agent) && ssh-add``` Вы познакомитесь с тем как при создании ВМ создать своего пользователя в блоке metadata в следующей лекции.;
+
+### Ответ:
+ 
+![02_1_6 ](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/02/screenshots/Terraform02_1_6.png)
+
 8. Ответьте, как в процессе обучения могут пригодиться параметры ```preemptible = true``` и ```core_fraction=5``` в параметрах ВМ.
+
+### Ответ:
+
+Данные параметры могут пригодиться для экономии облачных ресурсов, `preemtible = true` позволяет создать прерываемую ВМ, которая будет выключена через 24 часа после старта, данная опция снижает стоимость виртуальной машины. Параметр `core_fraction=5` устанавливает базовую производительно для ядра в процентах, чем значение меньше, тем дешевле обходится виртуальная машина.
 
 В качестве решения приложите:
 
