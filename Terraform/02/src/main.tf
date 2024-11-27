@@ -21,14 +21,14 @@ data "yandex_compute_image" "ubuntu" {
 }
 
 resource "yandex_compute_instance" "web" {
-  name        = var.vm_web_name
-  hostname    = var.vm_web_name
-  platform_id = var.vm_web_platform_id
-  zone        = var.vm_web_default_zone
+  name        = local.vm_web_name
+  hostname    = local.vm_web_name
+  platform_id = local.vm_web_platform_id
+  zone        = local.vm_web_default_zone
   resources {
-    cores         = var.vm_web_core
-    memory        = var.vm_web_memory
-    core_fraction = var.vm_web_core_fraction
+    cores         = local.vm_web_core
+    memory        = local.vm_web_memory
+    core_fraction = local.vm_web_core_fraction
   }
   boot_disk {
     initialize_params {
@@ -50,14 +50,14 @@ resource "yandex_compute_instance" "web" {
 }
 
 resource "yandex_compute_instance" "db" {
-  name        = var.vm_db_name
-  hostname    = var.vm_db_name
-  platform_id = var.vm_db_platform_id
-  zone        = var.vm_db_default_zone
+  name        = local.vm_db_name
+  hostname    = local.vm_db_name
+  platform_id = local.vm_db_platform_id
+  zone        = local.vm_db_default_zone
   resources {
-    cores         = var.vm_db_core
-    memory        = var.vm_db_memory
-    core_fraction = var.vm_db_core_fraction
+    cores         = local.vm_db_core
+    memory        = local.vm_db_memory
+    core_fraction = local.vm_db_core_fraction
   }
   boot_disk {
     initialize_params {

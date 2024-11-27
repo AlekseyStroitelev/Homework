@@ -86,6 +86,13 @@
 2. Замените переменные внутри ресурса ВМ на созданные вами local-переменные.
 3. Примените изменения.
 
+### Ответ:
+Изменения применил, `terraform plan` изменений не нашел:
+![02_5_1](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/02/screenshots/Terraform02_5_1.png)
+![02_5_2](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/02/screenshots/Terraform02_5_2.png)
+![02_5_3](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/02/screenshots/Terraform02_5_3.png)
+![02_5_4](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/02/screenshots/Terraform02_5_4.png)
+
 
 ### Задание 6
 
