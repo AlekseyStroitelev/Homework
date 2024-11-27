@@ -18,11 +18,11 @@ variable "family" {
   description = "The name of the image family to which this image belongs"
 }
 
-variable "vm_web_name" {
-  type = string
-  default = "netology-develop-platform-web"
-  description = "Resource name"  
-}
+# variable "vm_web_name" {
+#   type = string
+#   default = "netology-develop-platform-web"
+#   description = "Resource name"  
+# }
 
 variable "vm_web_platform_id" {
   type = string
@@ -30,23 +30,23 @@ variable "vm_web_platform_id" {
   description = "The type of virtual machine to create. The default is standard-v1"  
 }
 
-variable "vm_web_core" {
-  type = number
-  default = 2
-  description = "CPU cores for the instance"
-}
+# variable "vm_web_core" {
+#   type = number
+#   default = 2
+#   description = "CPU cores for the instance"
+# }
 
-variable "vm_web_memory" {
-  type = number
-  default = 2
-  description = "Memory size in GB"
-}
+# variable "vm_web_memory" {
+#   type = number
+#   default = 2
+#   description = "Memory size in GB"
+# }
 
-variable "vm_web_core_fraction" {
-  type = number
-  default = 5
-  description = "If provided, specifies baseline performance for a core as a percent"
-}
+# variable "vm_web_core_fraction" {
+#   type = number
+#   default = 5
+#   description = "If provided, specifies baseline performance for a core as a percent"
+# }
 
 variable "vm_web_default_zone" {
   type        = string
@@ -74,8 +74,41 @@ variable "vm_web_vpc_name" {
 
 ###ssh vars
 
-variable "vms_ssh_root_key" {
-  type        = string
-  default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ+eCdyUkojw4hF52nM/4WO8P53gbu+Q5A1n56r0b5VL"
-  description = "ssh-keygen -t ed25519"
+# variable "vms_ssh_root_key" {
+#   type        = string
+#   default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ+eCdyUkojw4hF52nM/4WO8P53gbu+Q5A1n56r0b5VL"
+#   description = "ssh-keygen -t ed25519"
+# }
+
+variable "metadata" {
+  type = map(object({
+    serial_port_enable = bool
+    ssh-keys           = string
+  }))
+  default = {
+    vm = {
+      serial_port_enable = true
+      ssh-keys           = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ+eCdyUkojw4hF52nM/4WO8P53gbu+Q5A1n56r0b5VL"
+    }
+  }
+}
+
+variable "vms_resources" {
+  type    = map(object({
+    core     = number
+    memory   = number
+    fraction = number
+  }))
+  default = {
+    web = {
+      core     = 2
+      memory   = 2
+      fraction = 5
+    }
+    db = {
+      core     = 2
+      memory   = 2
+      fraction = 20
+    }
+  }
 }

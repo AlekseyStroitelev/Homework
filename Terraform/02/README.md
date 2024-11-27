@@ -130,6 +130,12 @@
 5. Найдите и закоментируйте все, более не используемые переменные проекта.
 6. Проверьте terraform plan. Изменений быть не должно.
 
+### Ответ:
+`map(object)` добавлены, `terraform plan` изменений не видит:
+![02_6_1](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/02/screenshots/Terraform02_6_1.png)
+![02_6_2](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/02/screenshots/Terraform02_6_2.png)
+
+
 ------
 
 ## Дополнительное задание (со звёздочкой*)
