@@ -33,7 +33,7 @@ variable "security_group_ingress" {
 
 
 variable "security_group_egress" {
-  description = "secrules egress"
+  description = "securles egress"
   type = list(object(
     {
       protocol       = string

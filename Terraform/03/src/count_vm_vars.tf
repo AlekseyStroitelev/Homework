@@ -4,11 +4,11 @@ variable "family" {
   description = "The name of the image family to which this image belongs"
 }
 
-variable "count_vm_web" {
+variable "count_vm" {
   type = number
   default = 2
-  description = "The number of virtual machines named web"
-  }
+  description = "The number of virtual machines"
+}
 
 variable "name_vm" {
   type        = string
@@ -26,14 +26,12 @@ variable "scheduling_policy_preemtible" {
   type = bool
   default = true
   description = "Scheduling policy configuration"
-  
 }
 
 variable "network_interface_nat" {
   type = bool
   default = true
-  description = "Provide a public address, for instance, to access the internet over NAT"
-  
+  description = "Provide a public address, for instance, to access the internet over NAT" 
 }
 
 variable "serial_port"   {
@@ -45,8 +43,8 @@ variable "serial_port"   {
 variable "ssh_keys" {
   type = string
   description = "Metadata key"
-  
 }
+
 variable "vms_resources" {
   type    = map(object({
     core     = number
@@ -54,7 +52,7 @@ variable "vms_resources" {
     fraction = number
   }))
   default = {
-    web = {
+    vm = {
       core     = 2
       memory   = 2
       fraction = 5
