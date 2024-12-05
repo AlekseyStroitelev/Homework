@@ -1,5 +1,5 @@
 variable "security_group_ingress" {
-  description = "secrules ingress"
+  description = "securles ingress"
   type = list(object(
     {
       protocol       = string
