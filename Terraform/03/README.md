@@ -53,6 +53,14 @@ variable "each_vm" {
 1. Создайте 3 одинаковых виртуальных диска размером 1 Гб с помощью ресурса yandex_compute_disk и мета-аргумента count в файле **disk_vm.tf** .
 2. Создайте в том же файле **одиночную**(использовать count или for_each запрещено из-за задания №4) ВМ c именем "storage"  . Используйте блок **dynamic secondary_disk{..}** и мета-аргумент for_each для подключения созданных вами дополнительных дисков.
 
+### Ответ:
+
+Создана виртуальная машина с именем `storage`, создано три виртуальных диска размером 1 ГБ каждый и подключены к storage.
+
+![Terraform03_3_1](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/03/screenshots/terraform03_3_1.png)
+
+![Terraform03_3_2](https://github.com/AlekseyStroitelev/Homework/blob/main/Terraform/03/screenshots/terraform03_3_2.png)
+
 ------
 
 ### Задание 4
