@@ -4,6 +4,7 @@ resource "yandex_compute_instance" "vm" {
   hostname    = "${var.name_vm}-${count.index+1}"
   platform_id = var.vm_platform_id
   zone        = var.default_zone
+  depends_on = [ yandex_compute_instance.db ]
   resources {
     cores         = var.vms_resources.vm.core
     memory        = var.vms_resources.vm.memory
@@ -24,6 +25,6 @@ resource "yandex_compute_instance" "vm" {
   }
   metadata = {
     serial-port-enable = var.serial_port
-    ssh-keys           = "ubuntu:${var.ssh_keys}"
+    ssh-keys           = "ubuntu:${local.ssh_key}"
   }
 }

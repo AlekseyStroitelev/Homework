@@ -40,11 +40,6 @@ variable "serial_port"   {
   description = "Metadata key"
 }
 
-variable "ssh_keys" {
-  type = string
-  description = "Metadata key"
-}
-
 variable "vms_resources" {
   type    = map(object({
     core     = number
