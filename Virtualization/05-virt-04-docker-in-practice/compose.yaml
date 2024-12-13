@@ -2,4 +2,15 @@ include:
   - ./proxy.yaml
 
 services:
-  
+  web:
+    image: cr.yandex/crp44di9pfims0uojh6k/custom-web:latest
+    restart: always
+    networks:
+      backend: {}
+    ports:
+      - "172.20.0.5:8090:8090"
+    
+
+  db:
+    image: mysql:8
+    restart: always
