@@ -40,7 +40,7 @@ See 'snap info docker' for additional versions.
 
 ### Ответ:
 
-[vulnerabilities]()
+[vulnerabilities](https://github.com/AlekseyStroitelev/Homework/blob/main/Virtualization/05-virt-04-docker-in-practice/scan_result/vulnerabilities.csv)
 
 ## Задача 3
 1. Изучите файл "proxy.yaml"
