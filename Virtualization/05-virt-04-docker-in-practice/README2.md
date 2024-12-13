@@ -10,10 +10,12 @@ sudo apt  install docker-compose  # version 1.25.0-1
 
 See 'snap info docker' for additional versions.
 ```
-![0_1]()
+![0_1](https://github.com/AlekseyStroitelev/Homework/blob/main/Virtualization/05-virt-04-docker-in-practice/screenshots/docker0_1.png)
 
 В случае наличия установленного в системе ```docker-compose``` - удалите его.  
 2. Убедитесь что у вас УСТАНОВЛЕН ```docker compose```(без тире) версии не менее v2.24.X, для это выполните команду ```docker compose version```  
+
+![0_2](https://github.com/AlekseyStroitelev/Homework/blob/main/Virtualization/05-virt-04-docker-in-practice/screenshots/docker0_2.png)
 
 ---
 
