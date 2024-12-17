@@ -1,9 +1,12 @@
 #!/bin/bash
-REPO=""
-DIR=""
+REPO="https://github.com/AlekseyStroitelev/docker-practica.git"
+DIR="/opt/repo"
 sudo -i
-apt update
-apt install -y git
+apt-get update
+apt-get upgrade -y
+apt-get install docker.io -y
+apt-get install docker-compose-v2 -y
+apt-get install git -y
 git clone "$REPO" "$DIR"
 cd "$DIR"
 docker compose up -d
