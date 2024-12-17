@@ -1,0 +1,10 @@
+#!/bin/bash
+REPO=""
+DIR=""
+sudo -i
+apt update
+apt install -y git
+git clone "$REPO" "$DIR"
+cd "$DIR"
+docker compose up -d
+exit
