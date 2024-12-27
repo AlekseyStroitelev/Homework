@@ -9,6 +9,11 @@
 5. Сделайте fork [репозитория](https://github.com/aragastmatb/example-teamcity).
 6. Создайте VM (2CPU4RAM) и запустите [playbook](./infrastructure).
 
+### Ответ:
+
+Подготовка выполнена, в результате развернуто три виртуальные машины, `teamcity-server`, `teamcity-agent`, `nexus-01`.
+Выполнена первичная настройка.
+
 ## Основная часть
 
 1. Создайте новый проект в teamcity на основе fork.
