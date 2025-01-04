@@ -46,9 +46,11 @@
 ![1_3](https://github.com/AlekseyStroitelev/Homework/blob/main/Ci/09-ci-05-teamcity/screenshots/teamcity1_3.png)
 
 14. Внесите изменения из произвольной ветки `feature/add_reply` в `master` через `Merge`.
-
 15. Убедитесь, что нет собранного артефакта в сборке по ветке `master`.
 16. Настройте конфигурацию так, чтобы она собирала `.jar` в артефакты сборки.
+
+![1_4](https://github.com/AlekseyStroitelev/Homework/blob/main/Ci/09-ci-05-teamcity/screenshots/teamcity1_4.png)
+
 17. Проведите повторную сборку мастера, убедитесь, что сбора прошла успешно и артефакты собраны.
 18. Проверьте, что конфигурация в репозитории содержит все настройки конфигурации из teamcity.
 19. В ответе пришлите ссылку на репозиторий.
