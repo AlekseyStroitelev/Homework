@@ -32,11 +32,19 @@
 ![1_1](https://github.com/AlekseyStroitelev/Homework/blob/main/Ci/09-ci-05-teamcity/screenshots/teamcity1_1.png)
 
 8. Мигрируйте `build configuration` в репозиторий.
+
+`Пришлось создавать дополнительный VCS root с подключением через SSH, ибо с авторизвцией по логину и паролю от github прилетала ошибка, о том, что такой метод аутентификации больше не доступен.`
+
+![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/Ci/09-ci-05-teamcity/screenshots/teamcity1_2.png)
+
 9. Создайте отдельную ветку `feature/add_reply` в репозитории.
 10. Напишите новый метод для класса Welcomer: метод должен возвращать произвольную реплику, содержащую слово `hunter`.
 11. Дополните тест для нового метода на поиск слова `hunter` в новой реплике.
 12. Сделайте push всех изменений в новую ветку репозитория.
 13. Убедитесь, что сборка самостоятельно запустилась, тесты прошли успешно.
+
+![1_3](https://github.com/AlekseyStroitelev/Homework/blob/main/Ci/09-ci-05-teamcity/screenshots/teamcity1_3.png)
+
 14. Внесите изменения из произвольной ветки `feature/add_reply` в `master` через `Merge`.
 15. Убедитесь, что нет собранного артефакта в сборке по ветке `master`.
 16. Настройте конфигурацию так, чтобы она собирала `.jar` в артефакты сборки.
