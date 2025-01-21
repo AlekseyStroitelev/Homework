@@ -51,9 +51,9 @@
     - Nagios
 
 - Ответ:
-  push модель - TICK
-  pull модель - Prometheus(но через pushgateway можно привести к push модели)
-  гибридные модели - Zabbix, VictoriaMetrics, Nagios(судя по документации можно реализовать Passive или Active режимы сбора статистики, что соответствует push или pull моделям)
+  Push модель - TICK;
+  Pull модель - Prometheus(но через pushgateway можно привести к push модели);
+  Гибридные модели - Zabbix, VictoriaMetrics, Nagios(судя по документации можно реализовать Passive или Active режимы сбора статистики, что соответствует push или pull моделям).
 
 #
 7. Склонируйте себе [репозиторий](https://github.com/influxdata/sandbox/tree/master) и запустите TICK-стэк, 
