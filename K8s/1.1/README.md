@@ -21,4 +21,6 @@
 
 ### Ответ:
 
-![1_1]()
+![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.1/screenshots/k8s1_2.png)
+
+![1_1](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.1/screenshots/k8s1_1.png)
