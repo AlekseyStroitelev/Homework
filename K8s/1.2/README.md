@@ -31,7 +31,7 @@
 
 ### Ответ:
 
-[Манифест netology-web](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.2/netology-web.yml)
+[Манифест netology-web](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.2/netology-web.yml)<br/>
 [Манифест netology-svc](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.2/netology-svc.yml)
 
 ![1_3](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.2/screenshots/k8s1_3.png)
