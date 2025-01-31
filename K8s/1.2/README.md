@@ -14,6 +14,8 @@
 
 ### Ответ:
 
+[Манифест hello-world](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.2/hello-world.yml)
+
 ![1_1](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.2/screenshots/k8s1_1.png)
 
 ![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.2/screenshots/k8s1_2.png)
@@ -28,6 +30,9 @@
 4. Подключиться локально к Service с помощью `kubectl port-forward` и вывести значение (curl или в браузере).
 
 ### Ответ:
+
+[Манифест netology-web](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.2/netology-web.yml)
+[Манифест netology-svc](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.2/netology-svc.yml)
 
 ![1_3](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.2/screenshots/k8s1_3.png)
 
