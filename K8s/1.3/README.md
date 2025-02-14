@@ -47,7 +47,7 @@
 
 ### Ответ:
 
-Создан [deployment]() для запуска `nginx` с использованием `init-контейнера`. Так как [service]() еще не запущен - pod имеет статус `init`:
+Создан [deployment](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.3/nginx-deployment.yml) для запуска `nginx` с использованием `init-контейнера`. Так как [service](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.3/nginx-svc.yml) еще не запущен - pod имеет статус `init`:
 
 ![1_6](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.3/screenshots/k8s1_6.png)
 
