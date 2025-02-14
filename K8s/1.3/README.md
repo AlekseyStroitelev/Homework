@@ -24,6 +24,18 @@
 
 ![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.3/screenshots/k8s1_2.png)
 
+Создан [service]():
+
+![1_3](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.3/screenshots/k8s1_3.png)
+
+Запущен отдельный [pod] с multitool:
+
+![1_4](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.3/screenshots/k8s1_4.png)
+
+Выполнены успешные curl запросы к сервисам из п.1:
+
+![1_5](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.3/screenshots/k8s1_5.png)
+
 ------
 
 ### Задание 2. Создать Deployment и обеспечить старт основного контейнера при выполнении условий
