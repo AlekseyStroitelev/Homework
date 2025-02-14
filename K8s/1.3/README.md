@@ -24,11 +24,11 @@
 
 ![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.3/screenshots/k8s1_2.png)
 
-Создан [service]():
+Создан [service](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.3/service.yml):
 
 ![1_3](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.3/screenshots/k8s1_3.png)
 
-Запущен отдельный [pod] с multitool:
+Запущен отдельный [pod](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.3/multitool.yml) с multitool:
 
 ![1_4](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.3/screenshots/k8s1_4.png)
 
