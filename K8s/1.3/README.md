@@ -45,3 +45,14 @@
 3. Создать и запустить Service. Убедиться, что Init запустился.
 4. Продемонстрировать состояние пода до и после запуска сервиса.
 
+### Ответ:
+
+Создан [deployment]() для запуска `nginx` с использованием `init-контейнера`. Так как [service]() еще не запущен - pod имеет статус `init`:
+
+![1_6](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.3/screenshots/k8s1_6.png)
+
+После запуска сервиса pod перешел из состояния `init` в `running`:
+
+![1_7](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.3/screenshots/k8s1_7.png)
+
+------
