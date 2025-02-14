@@ -16,9 +16,13 @@
 
 ### Ответ:
 
-Создан deployment на два контейнера, количество реплик 1:
+Создан [deployment](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.3/deployment.yml) на два контейнера, количество реплик 1:
 
 ![1_1](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.3/screenshots/k8s1_1.png)
+
+Количество реплик увеличено до 2:
+
+![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.3/screenshots/k8s1_2.png)
 
 ------
 
