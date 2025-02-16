@@ -36,4 +36,8 @@
 
 ### Ответ:
 
+Создан `service` out-service, с типом `NodePort`, сервис доступен на порту 31080:
+
+![1_4](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.4/screenshots/k8s1_4.png)
+
 ------
