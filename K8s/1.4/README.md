@@ -16,7 +16,15 @@
 
 ### Ответ:
 
+Созданы `deployment` на три реплики из двух контейнеров, `service` и отдельный `pod` с multitool для проверки доступности сервисов внутри кластера:
+
 ![1_1](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.4/screenshots/k8s1_1.png)
+
+Из `pod` multitool каждый сервис доступен по своему порту:
+
+![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.4/screenshots/k8s1_2.png)
+
+![1_3](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.4/screenshots/k8s1_3.png)
 
 ------
 
