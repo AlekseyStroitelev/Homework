@@ -16,7 +16,22 @@
 
 ### Ответ:
 
+Манифесты:
+
+[nginx-deployment]()
+[multitool-deployment]()
+[nginx-service]()
+[multitool-service]()
+
+Приложения развернуты:
+
 ![1_1](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.5/screenshots/k8s1_1.png)
+
+Приложения видят друг друга через `service`:
+
+![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.5/screenshots/k8s1_2.png)
+
+![1_3](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.5/screenshots/k8s1_3.png)
 
 ------
 
