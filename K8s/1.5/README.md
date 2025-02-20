@@ -18,10 +18,10 @@
 
 Манифесты:
 
-[nginx-deployment](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.5/nginx-deployment.yml)
-[multitool-deployment](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.5/multitool-deployment.yml)
-[nginx-service](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.5/nginx-service.yml)
-[multitool-service](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.5/multitool-service.yml)
+[nginx-deployment](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.5/nginx-deployment.yml)<br/>
+[multitool-deployment](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.5/multitool-deployment.yml)<br/>
+[nginx-service](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.5/nginx-service.yml)<br/>
+[multitool-service](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.5/multitool-service.yml)<br/>
 
 Приложения развернуты:
 
