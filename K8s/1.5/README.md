@@ -44,6 +44,6 @@
 
 ### Ответ:
 
-![1_1](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.5/screenshots/k8s1_1.png)
+![1_4](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.5/screenshots/k8s1_4.png)
 
 ------
