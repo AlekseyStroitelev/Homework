@@ -44,6 +44,10 @@
 
 ### Ответ:
 
+[ingress](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.5/ingress.yml)<br/>
+
 ![1_4](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.5/screenshots/k8s1_4.png)
+
+![1_5](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/1.5/screenshots/k8s1_5.png)
 
 ------
