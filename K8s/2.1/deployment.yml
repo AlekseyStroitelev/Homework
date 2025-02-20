@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hwork
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: tools
+  template:
+    metadata:
+      labels:
+        app: tools
+    spec:
+      containers:
+      - name: busybox
+        image: busybox:latest
+        command: ['sh','-c',do echo "$(date) - Запись в файл" >> /data/busybox/file.txt; sleep 5; done']
+        volumeMounts:
+        - name: busybox-volume
+          mountPath: /data/busybox
+      - name: multitool
+        image: wbitt/network-multitool
+        volumeMounts:
+          - name: busybox-volume
+            mountPath: /data
+        ports:
+        - containerPort: 8080
+      volumes:
+        - name: busybox-volume
+          emptyDir: {}
