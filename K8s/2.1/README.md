@@ -24,7 +24,12 @@
 
 Приложения запущены:
 
-![1_1]()
+![1_1](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.1/screenshots/k8s1_1.png)
+
+Из контейнера `busybox` пишутся данныые в `file.txt`, из контейнера `multitool` данный файл доступен для чтения:
+
+![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.1/screenshots/k8s1_2.png)
+
 ------
 
 ### Задание 2
