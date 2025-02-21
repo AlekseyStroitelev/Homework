@@ -45,7 +45,14 @@
 
 ### Ответ:
 
+[daemonset](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.1/daemonset.yml)
 
-[]()
+Приложение запущено:
+
+![1_3](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.1/screenshots/k8s1_3.png)
+
+Из контейнера `multitool` файл `/var/log/syslog` доступен для чтения:
+
+![1_4](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.1/screenshots/k8s1_4.png)
 
 ------

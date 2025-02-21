@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: loger
+  namespace: netology
+  labels:
+    app: logging-app
+spec:
+  selector:
+    matchLabels:
+      name: loger
+  template:
+    metadata:
+      labels:
+        name: loger
+    spec:
+      containers:
+      - name: multitool
+        image: wbitt/network-multitool
+        volumeMounts:
+          - name: logs
+            mountPath: /data/logs
+        ports:
+        - containerPort: 8080
+      volumes:
+      - name: logs
+        hostPath:
+          path: /var/log
