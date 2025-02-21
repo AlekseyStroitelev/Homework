@@ -20,9 +20,11 @@
 
 ### Ответ:
 
+[deployment](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.1/deployment.yml)
 
+Приложения запущены:
 
-[]()
+![1_1]()
 ------
 
 ### Задание 2

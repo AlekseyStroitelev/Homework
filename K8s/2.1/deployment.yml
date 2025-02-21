@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hwork
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: tools
@@ -15,7 +15,7 @@ spec:
       containers:
       - name: busybox
         image: busybox:latest
-        command: ['sh','-c',do echo "$(date) - Запись в файл" >> /data/busybox/file.txt; sleep 5; done']
+        command: ['sh','-c','while true; do echo $(date) >> /data/busybox/file.txt; sleep 5; done']
         volumeMounts:
         - name: busybox-volume
           mountPath: /data/busybox
