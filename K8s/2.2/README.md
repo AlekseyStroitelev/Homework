@@ -21,7 +21,29 @@
 
 ### Ответ:
 
+Манифесты:
 
+[Deployment-local](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.2/deployment-local.yml)<br/>
+[PV-Local](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.2/pv-local.yml)<br/>
+[PVC-Local](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.2/pvc-local.yml)
+
+Сервисы стартанули, PV и PVC связались:
+
+![1_1](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.2/screenshots/k8s1_1.png)
+
+`File.txt` доступен из контейнера `Multitool`:
+
+![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.2/screenshots/k8s1_2.png)
+
+После удаления `Deployment-local` и `PVC-Local` статус `PV-Local` изменился с `bound` на `released`, так как больше нет ни сервисов использующих данный PV ни PVC, при этом локально на самой ноде где был выделен `volume` - данные остались:
+
+![1_3](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.2/screenshots/k8s1_3.png)
+
+![1_4](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.2/screenshots/k8s1_4.png)
+
+После удаления `PV-Local` данные на выделенном volume по прежнему доступны, так как при описании `PV-Local` использовался параметр `persistentVolumeReclaimPolicy` со значением `Retain`, соответственно данные будут доступны до тех пор, пока администратор в ручную не удалит их:
+
+![1_5](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.2/screenshots/k8s1_5.png)
 
 ------
 
