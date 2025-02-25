@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hwork
+  namespace: netology 
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: tools
+  template:
+    metadata:
+      labels:
+        app: tools
+    spec:
+      containers:
+      - name: busybox
+        image: busybox:latest
+        command: ['sh','-c','while true; do echo $(date) >> /data/busybox/file.txt; sleep 5; done']
+        volumeMounts:
+        - name: pv-local
+          mountPath: /data/busybox
+      - name: multitool
+        image: wbitt/network-multitool
+        volumeMounts:
+          - name: pv-local
+            mountPath: /data
+        ports:
+        - containerPort: 8080
+      volumes:
+        - name: pv-local
+          persistentVolumeClaim: 
+            claimName: pvc-local
