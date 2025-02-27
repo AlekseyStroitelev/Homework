@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hwork
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: tools
+  template:
+    metadata:
+      labels:
+        app: tools
+    spec:
+      containers:
+      - name: multitool
+        image: wbitt/network-multitool
+        volumeMounts:
+          - name: pv-nfs
+            mountPath: /data
+        ports:
+        - containerPort: 8080
+      volumes:
+        - name: pv-nfs
+          persistentVolumeClaim: 
+            claimName: pvc-nfs
