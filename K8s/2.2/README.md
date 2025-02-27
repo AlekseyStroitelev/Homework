@@ -63,9 +63,7 @@
 Манифесты:
 
 [Deployment-nfs]()<br/>
-
 [StorageClass]()<br/>
-
 [PVC-nfs]()
 
 Том создан и связан:
@@ -77,7 +75,7 @@
 ![1_7](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.2/screenshots/k8s1_7.png)
 
 Из контейнера доступны чтение и запись в данный том:
- 
+
 ![1_8](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.2/screenshots/k8s1_8.png)
 
 ------
