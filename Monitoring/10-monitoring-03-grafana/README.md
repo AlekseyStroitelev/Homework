@@ -35,7 +35,7 @@
 - load average 5m: `node_load5{instance="nodeexporter:9100",job="nodeexporter"}`
 - load average 15m: `node_load15{instance="nodeexporter:9100",job="nodeexporter"}`
 - количество свободной оперативной памяти `node_memory_MemAvailable_bytes{instance="nodeexporter:9100",job="nodeexporter"} / (1024 * 1024)`
-- количество места на файловой системе: 
+- количество места на файловой системе:</br>
   Total `node_filesystem_avail_bytes{mountpoint="/",instance="nodeexporter:9100",job="nodeexporter"} / (1024 * 1024 * 1024)`</br>
   Available `node_filesystem_size_bytes{mountpoint="/",instance="nodeexporter:9100",job="nodeexporter"} / (1024 * 1024 * 1024)`
 
