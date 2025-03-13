@@ -12,9 +12,9 @@
 
 ### Ответ:
 
-![1_1]()
+![1_1](https://github.com/AlekseyStroitelev/Homework/blob/main/Monitoring/10-monitoring-04-elk/screenshots/moni1_1.png)
 
-![1_2]()
+![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/Monitoring/10-monitoring-04-elk/screenshots/moni1_2.png)
 
 ## Задание 2
 
@@ -27,10 +27,10 @@
 
 ### Ответ:
 
-![1_3]()
+![1_3](https://github.com/AlekseyStroitelev/Homework/blob/main/Monitoring/10-monitoring-04-elk/screenshots/moni1_3.png)
 
-![1_4]()
+![1_4](https://github.com/AlekseyStroitelev/Homework/blob/main/Monitoring/10-monitoring-04-elk/screenshots/moni1_4.png)
 
-![1_5]()
+![1_5](https://github.com/AlekseyStroitelev/Homework/blob/main/Monitoring/10-monitoring-04-elk/screenshots/moni1_5.png)
 
 ---
