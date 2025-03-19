@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hw-configmap
+data:
+   index.html: |
+    <html>
+    <body>
+      <h1>Здесь могла быть ваша реклама!</h1>
+    </body>
+    </html>

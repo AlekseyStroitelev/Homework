@@ -32,6 +32,8 @@
 
 ### Ответ:
 
+Задание №2 выполнено по пунктам, результат запроса по https:
+
 ![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.3/screenshots/k8s1_2.png)
 
 ------
