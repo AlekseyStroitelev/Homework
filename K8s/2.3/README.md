@@ -16,6 +16,10 @@
 
 ### Ответ:
 
+[ConfigMap](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.3/configmap.yml)</br>
+[Deployment](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.3/deployment.yml)</br>
+[Service](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.3/service.yml)</br>
+
 Задание №1 выполнено по пунктам, результат на скриншоте:
 
 ![1_1](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.3/screenshots/k8s1_1.png)
@@ -31,6 +35,12 @@
 5. Предоставить манифесты, а также скриншоты или вывод необходимых команд.
 
 ### Ответ:
+
+[Nginx-ConfigMap](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.3/nginx-configmap.yaml)</br>
+[Nginx-Deployment](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.3/nginx-deployment.yml)</br>
+[Nginx-Service](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.3/nginx-service.yml)</br>
+[Nginx-Ingress](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.3/nginx-ingress.yaml)</br>
+[Nginx-Secret](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.3/nginx-secret.yml)</br>
 
 Задание №2 выполнено по пунктам, результат запроса по https:
 
