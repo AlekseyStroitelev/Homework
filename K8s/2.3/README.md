@@ -18,7 +18,7 @@
 
 Задание №1 выполнено по пунктам, результат на скриншоте:
 
-![1_1]()
+![1_1](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.3/screenshots/k8s1_1.png)
 
 ------
 
@@ -32,5 +32,6 @@
 
 ### Ответ:
 
+![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.3/screenshots/k8s1_2.png)
 
 ------
