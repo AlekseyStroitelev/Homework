@@ -18,23 +18,23 @@
 
 Выпуск сертификата:
 
-![1_1]()
+![1_1](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.4/screenshots/k8s1_1.png)
 
 Добавление пользователя в `config`:
 
-![1_2]()
+![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.4/screenshots/k8s1_2.png)
 
 Заведение `role` и `role-binding`:
 
-[role]()</br>
-[role-binding]()</br>
+[role](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.4/role.yml)</br>
+[role-binding](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.4/role-binding.yml)</br>
 
 Добавление контекста для нового пользователя в `config`:
 
-![1_3]()
+![1_3](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.4/screenshots/k8s1_3.png)
 
 Переключение на контекст нового пользователя и проверка работы команд:
 
-![1_4]()
+![1_4](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.4/screenshots/k8s1_4.png)
 
 ------
