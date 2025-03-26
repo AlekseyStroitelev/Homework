@@ -16,7 +16,7 @@
 
 Для выполнения задания использован helm-chart nginx.
 
-![1_1]()
+![1_1](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.5/screenshots/k8s1_1.png)
 
 ------
 
@@ -27,5 +27,17 @@
 3. Продемонстрируйте результат.
 
 ### Ответ:
+
+Создадим два `namespace`, app1 и app2:
+
+![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.5/screenshots/k8s1_2.png)
+
+Запустим несколько версий приложения согласно заданию:
+
+![1_3](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.5/screenshots/k8s1_3.png)
+
+Приложения запущены и имеют статус `deployed`:
+
+![1_4](https://github.com/AlekseyStroitelev/Homework/blob/main/K8s/2.5/screenshots/k8s1_4.png)
 
 ------
