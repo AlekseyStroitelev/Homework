@@ -28,7 +28,7 @@ Resource Terraform для Yandex Cloud:
 Созданная VPC:
 ![1_1](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.1/screenshots/project1_1.png)
 
-Созданные VM и NAT-instane:
+Созданные VM и NAT-instance:
 ![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.1/screenshots/project1_2.png)
 
 Созданные подсети:
