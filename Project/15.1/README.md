@@ -26,7 +26,21 @@ Resource Terraform для Yandex Cloud:
 ### Ответ:
 
 Созданная VPC:
-![1_1]()
+![1_1](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.1/screenshots/project1_1.png)
 
+Созданные VM и NAT-instane:
+![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.1/screenshots/project1_2.png)
+
+Созданные подсети:
+![1_3](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.1/screenshots/project1_3.png)
+
+Созданная таблица маршрутизации:
+![1_4](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.1/screenshots/project1_4.png)
+
+Проверка доступности ресурсов сети интеренет с машины в подсети `public`:
+![1_5](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.1/screenshots/project1_5.png)
+
+Проверка доступности ресурсов сети интеренет с машины в подсети `private`:
+![1_6](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.1/screenshots/project1_6.png)
 
 ---
