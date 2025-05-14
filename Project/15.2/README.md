@@ -29,10 +29,10 @@
 
 1. Создать бакет Object Storage и разместить в нём файл с картинкой:
 
- - Созданный bucket:
+ - Созданный bucket:</br>
  ![1_1](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.2/screenshots/project1_1.png)</br>
 
- - Файл с картинкой, доступный из интернета:
+ - Файл с картинкой, доступный из интернета:</br>
  ![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.2/screenshots/project1_2.png)</br>
 
 2. Создать группу ВМ в public подсети фиксированного размера с шаблоном LAMP и веб-страницей, содержащей ссылку на картинку из бакета:
