@@ -1,6 +1,7 @@
 # Домашняя работа к занятию «Вычислительные мощности. Балансировщики нагрузки»  
 
 ---
+
 ## Задание 1. Yandex Cloud 
 
 **Что нужно сделать**
@@ -36,3 +37,22 @@
  ![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.2/screenshots/project1_2.png)</br>
 
 2. Создать группу ВМ в public подсети фиксированного размера с шаблоном LAMP и веб-страницей, содержащей ссылку на картинку из бакета:
+
+ - Создана Group Instance:</br>
+ ![1_3](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.2/screenshots/project1_3.png)</br>
+
+ - Три машины в группе:</br>
+ ![1_4](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.2/screenshots/project1_4.png)</br>
+
+3. Подключить группу к сетевому балансировщику:
+
+ - Создан сетевой балансировщик с IP-адресом `51.250.41.104`</br>
+ ![1_5](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.2/screenshots/project1_5.png)</br>
+
+ - Целевая группа подключена к балансировщику:</br>
+ ![1_6](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.2/screenshots/project1_6.png)</br>
+
+ - При удалении машин балансировщик шлет запросы на другую живую машину в группе:</br>
+ ![1_7](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.2/screenshots/project1_7.png)</br>
+
+ ![1_8](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.2/screenshots/project1_8.png)</br>

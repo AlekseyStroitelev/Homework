@@ -16,3 +16,4 @@ personal.auto.tfvars
 *_key.pub
 
 /pictures
+cloud-init.yml
