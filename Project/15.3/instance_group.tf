@@ -10,11 +10,17 @@ resource "yandex_compute_instance_group" "group_develop" {
       cores  = var.group_instance_resources.cores
       core_fraction = var.group_instance_resources.fraction
     }
+
+    scheduling_policy {
+      preemptible = var.group_instance_resources.preemptible
+    }
+    
     boot_disk {
       initialize_params {
         image_id = var.lamp_image_id
       }
     }
+
     network_interface {
       network_id = yandex_vpc_network.develop.id
       subnet_ids = ["${yandex_vpc_subnet.public.id}"]

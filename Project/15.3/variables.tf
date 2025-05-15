@@ -151,6 +151,7 @@ variable "group_instance_resources" {
     fraction     = number
     nat          = bool
     network_type = string
+    preemptible  = bool
   })
   default = {
     cores        = 2
@@ -158,6 +159,7 @@ variable "group_instance_resources" {
     fraction     = 20
     nat          = false
     network_type = "STANDARD"
+    preemptible  = true
   }
 }
 

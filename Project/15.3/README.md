@@ -26,6 +26,10 @@
 
  - ![1_2](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.3/screenshots/project1_2.png)</br>
 
-2. 
+ - Объект зашифрован:</br>
+
+ - ![1_3](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.3/screenshots/project1_3.png)</br>
+
+ - ![1_4](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.3/screenshots/project1_4.png)</br>
 
 --- 
