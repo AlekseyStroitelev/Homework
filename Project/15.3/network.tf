@@ -11,7 +11,23 @@ resource "yandex_vpc_subnet" "public" {
   v4_cidr_blocks = var.public_default_cidr
 }
 
-resource "yandex_vpc_subnet" "private" {
+resource "yandex_vpc_subnet" "private-a" {
+  name           = var.private_subnet_name
+  zone           = var.private_default_zone
+  network_id     = yandex_vpc_network.develop.id
+  v4_cidr_blocks = var.private_default_cidr
+  route_table_id = yandex_vpc_route_table.route_table.id
+}
+
+resource "yandex_vpc_subnet" "private-b" {
+  name           = var.private_subnet_name
+  zone           = var.private_default_zone
+  network_id     = yandex_vpc_network.develop.id
+  v4_cidr_blocks = var.private_default_cidr
+  route_table_id = yandex_vpc_route_table.route_table.id
+}
+
+resource "yandex_vpc_subnet" "private-d" {
   name           = var.private_subnet_name
   zone           = var.private_default_zone
   network_id     = yandex_vpc_network.develop.id
