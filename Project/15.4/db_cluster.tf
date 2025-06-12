@@ -3,6 +3,7 @@ resource "yandex_mdb_mysql_cluster" "db-cluster" {
   environment = "PRESTABLE"
   network_id  = yandex_vpc_network.develop.id
   version     = "8.0"
+  security_group_ids  = [yandex_vpc_security_group.mysql_sg.id]
   deletion_protection = true
 
   resources {
@@ -12,7 +13,9 @@ resource "yandex_mdb_mysql_cluster" "db-cluster" {
   }
 
   maintenance_window {
-    type = "ANYTIME"
+    type = "WEEKLY"
+    day  = "SAT"
+    hour = 01
   }
 
   backup_window_start {

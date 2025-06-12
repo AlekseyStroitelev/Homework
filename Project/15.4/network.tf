@@ -38,3 +38,20 @@ resource "yandex_vpc_subnet" "private-b" {
   network_id     = yandex_vpc_network.develop.id
   v4_cidr_blocks = var.subnet.private-b.cidr
 }
+
+resource "yandex_vpc_security_group" "mysql_sg" {
+  name        = "mysql-security-group"
+  network_id  = yandex_vpc_network.develop.id
+
+  ingress {
+    description    = "MySQL"
+    port           = 3306
+    protocol       = "TCP"
+    v4_cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  egress {
+    protocol       = "ANY"
+    v4_cidr_blocks = ["0.0.0.0/0"]
+  }
+}

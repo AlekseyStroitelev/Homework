@@ -41,4 +41,16 @@
 
 ![1_3](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.4/screenshots/project1_3.png)</br>
 
+Создан региональный кластер Kubernetes согласно требованиям задания:</br>
+
+![1_4](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.4/screenshots/project1_4.png)</br>
+
+Создана группа узлов с минимальным количеством 3 и автоскалированием до 6:</br>
+
+![1_5](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.4/screenshots/project1_5.png)</br>
+
+Результат работы команды `kubectl get nodes`:</br>
+
+![1_6](https://github.com/AlekseyStroitelev/Homework/blob/main/Project/15.4/screenshots/project1_6.png)</br>
+
 --- 
